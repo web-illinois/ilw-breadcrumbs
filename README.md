@@ -6,12 +6,15 @@ Links: **[ilw-breadcrumbs in Builder](https://builder3.toolkit.illinois.edu/comp
 
 ## Overview
 
-A 1-3 paragraph explanation of what the component does and how it presents.
+The Illinois components implementation of breadcrumbs provides a list of formatted links that provide the path between the site’s home page and the page the reader is currently viewing.
 
+The tag <il-breadcrumbs> is used for the container which will include one or more <il-breadcrumb-page> items in order to provide a navigable path for users to move to different points in the website’s structure.
 ## Code Examples
 
 ```html
-<ilw-breadcrumbs></ilw-breadcrumbs>
+<ilw-breadcrumbs>
+  <il-breadcrumbs-page>Degree Programs</il-breadcrumbs-page>
+</ilw-breadcrumbs>
 ```
 
 ## Accessibility Notes and Use
