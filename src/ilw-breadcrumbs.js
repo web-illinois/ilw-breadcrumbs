@@ -1,12 +1,12 @@
 import { LitElement, html } from 'lit';
-import styles from './ilw-breadcrumbs.styles';
+import styles from './ilw-breadcrumbs.styles.js';
 import './ilw-breadcrumbs.css';
 
 class Breadcrumbs extends LitElement {
 
     static get properties() {
         return {
-            theme: { type: String, attribute: true }
+            label: {type: String, attribute: true},
         };
     }
 
@@ -16,19 +16,15 @@ class Breadcrumbs extends LitElement {
 
     constructor() {
         super();
-        this.align = '';
-        this.focus = '';
-        this.shadow = false;
-        this.collapse = false;
-        this.theme = '';
+        this.label = "Breadcrumbs";
     }
 
     render() {
-        return html`
-      <div>
-          <slot></slot>
-      </div>
-    `;
+        return html`<nav aria-label=${this.label} class="breadcrumb">
+      <ol>
+        <slot></slot>
+      </ol>
+    </nav>`;
     }
 }
 

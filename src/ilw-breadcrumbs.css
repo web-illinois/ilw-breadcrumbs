@@ -1,0 +1,90 @@
+.ilw-breadcrumbs {
+    font-family: var(--il-font-sans);
+    font-size: 1.0625rem;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+
+    h2 {
+        all: initial;
+        display: inline;
+        font-weight: bold;
+        color: var(--il-orange);
+
+        &:after {
+            content: ":";
+        }
+    }
+
+    ol, ul {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-align: initial;
+        list-style: none;
+        display: inline;
+    }
+
+    li {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-align: initial;
+        list-style: none;
+        display: inline;
+
+        &:before {
+            content: "/ ";
+        }
+
+        &:first-of-type:before {
+            content: '';
+        }
+
+        &:last-of-type {
+            font-weight: bold;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+
+.ilw-page-title {
+
+    .ilw-breadcrumbs {
+        margin: 0 auto;
+        max-width: var(--il-content-max-width);
+    }
+
+    h1 {
+        all: initial;
+        text-align: center;
+        margin: 1em auto 0;
+        max-width: var(--il-content-max-width);
+        font: 900 27px var(--il-font-sans);
+    }
+
+    &--poster h1 {
+        font: normal 2rem var(--il-font-condensed);
+        text-transform: uppercase;
+    }
+
+    .ilw-breadcrumbs + h1 {
+        margin-top: 50px;
+    }
+
+    @media (min-width: 800px) {
+        padding: {
+        top: 34px;
+        bottom: 73px;
+    }
+        h1 {
+            font-size: 4.5625rem;
+        }
+        .ilw-breadcrumbs + h1 {
+            margin-top: 70px;
+        }
+    }
+}
