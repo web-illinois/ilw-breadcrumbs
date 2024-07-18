@@ -1,3 +1,26 @@
+:root {
+    --ilw-breadcrumbs--link-color-last-link: #252525;
+    --ilw-breadcrumbs--link-decoration-last-link: none;
+}
+ilw-breadcrumbs {
+    a {
+        color: var(--ilw-link--color);
+    }
+    a:visited {
+        color: var(--ilw-link--visited-color);
+    }
+    a:focus, a:hover {
+        color: var(--ilw-link--focused-color);
+    }
+    a:last-child {
+        text-decoration: none;
+    }
+    a:last-child:focus, a:last-child:hover {
+        color: #252525;
+        cursor: text;
+    }
+}
+
 .ilw-breadcrumbs {
     font-family: var(--il-font-sans);
     font-size: 1.0625rem;

@@ -16,26 +16,19 @@
         {
             "name": "default",
             "description": "Default information",
-            "text": "<p>Lorem ipsum</p>"
+            "text": "<a home=\"/\" href=\"/\">Home</a>\n    <a href=\"/academics\">Academics</a>\n    <a href=\"/academics/undergraduate\">Undergraduate programs</a>\n    <a href=\"\" current=\"\">Degree programs</a>"
+        },
+        {
+            "name": "lastbreadcrumb",
+            "description": "No link for last breadcrumb",
+            "text": "<ilw-breadcrumbs>\n    <a home=\"/\" href=\"/\">Home</a>\n    <a href=\"/academics\">Academics</a>\n    <a href=\"/academics/undergraduate\">Undergraduate programs</a>\n    <span>Degree programs</span>\n</ilw-breadcrumbs>"
         }
+
     ],
     "attributes-fixed": [],
     "attributes-text": [],
-    "attributes": [
-        {
-            "name": "theme",
-            "description": "Color theme used",
-            "depreciated": false,
-            "values": [
-                "",
-                "blue",
-                "orange",
-                "white"
-            ]
-        }
-    ],
+    "attributes": [],
     "classes-fixed": [],
     "classes": [],
-    "css-variables": [
-    ]
+    "css-variables": []
 }
