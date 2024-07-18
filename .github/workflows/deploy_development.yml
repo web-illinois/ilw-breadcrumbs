@@ -9,7 +9,7 @@ on:
         type: string
 env:
   MAJORVERSION: ''
-  COMPONENT_NAME: ${{ github.event.repository.name }}
+  COMPONENT_NAME: 'ilw-breadcrumbs'
 jobs:
   build:
     runs-on: ubuntu-latest
