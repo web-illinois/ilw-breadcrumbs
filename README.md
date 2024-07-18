@@ -15,7 +15,7 @@ The current page item should contain the “current” tag in code and should no
 
 
 ## Code Examples
-
+Breadcrumb with the current page as a link
 ```html
 <ilw-breadcrumbs>
     <a home="/" href="/">Home</a>
@@ -23,14 +23,15 @@ The current page item should contain the “current” tag in code and should no
     <a href="/academics/undergraduate">Undergraduate programs</a>
     <a href="" current="">Degree programs</a>
 </ilw-breadcrumbs>
-
+```
+Breadcrumb with the current page not linking
+```html
 <ilw-breadcrumbs>
     <a home="/" href="/">Home</a>
     <a href="/academics">Academics</a>
     <a href="/academics/undergraduate">Undergraduate programs</a>
     <span>Degree programs</span>
 </ilw-breadcrumbs>
-
 ```
 
 ## External References
