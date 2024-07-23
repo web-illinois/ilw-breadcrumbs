@@ -1,7 +1,3 @@
-:root {
-    --ilw-breadcrumbs--link-color-last-link: #252525;
-    --ilw-breadcrumbs--link-decoration-last-link: none;
-}
 ilw-breadcrumbs {
     a {
         color: var(--ilw-link--color);
@@ -12,102 +8,31 @@ ilw-breadcrumbs {
     a:focus, a:hover {
         color: var(--ilw-link--focused-color);
     }
-    a:last-child {
-        text-decoration: none;
-    }
-    a:last-child:focus, a:last-child:hover {
-        color: #252525;
-        cursor: text;
-    }
-}
-
-.ilw-breadcrumbs {
-    font-family: var(--il-font-sans);
-    font-size: 1.0625rem;
-    letter-spacing: .25px;
-    text-transform: uppercase;
-
-    h2 {
-        all: initial;
-        display: inline;
-        font-weight: bold;
-        color: var(--il-orange);
-
-        &:after {
-            content: ":";
-        }
-    }
-
-    ol, ul {
-        box-sizing: border-box;
+    ol {
+        list-style: none;
         margin: 0;
         padding: 0;
-        text-align: initial;
-        list-style: none;
-        display: inline;
+        font: 400 0.875rem/2rem var(--il-font-sans);
     }
-
     li {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        text-align: initial;
-        list-style: none;
         display: inline;
-
-        &:before {
-            content: "/ ";
-        }
-
-        &:first-of-type:before {
-            content: '';
-        }
-
-        &:last-of-type {
-            font-weight: bold;
-        }
+        color: #252525;
+        vertical-align: baseline;
     }
-
+    li + li::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>') no-repeat center;
+        background-size: contain;
+        fill: var(--il-blue);
+        padding: 0 6px;
+    }
     a {
-        color: inherit;
-        text-decoration: underline;
+        color: var(--ilw-link--color);
     }
-}
-
-.ilw-page-title {
-
-    .ilw-breadcrumbs {
-        margin: 0 auto;
-        max-width: var(--il-content-max-width);
-    }
-
-    h1 {
-        all: initial;
-        text-align: center;
-        margin: 1em auto 0;
-        max-width: var(--il-content-max-width);
-        font: 900 1.69rem var(--il-font-sans);
-    }
-
-    &--poster h1 {
-        font: normal 2rem var(--il-font-condensed);
-        text-transform: uppercase;
-    }
-
-    .ilw-breadcrumbs + h1 {
-        margin-top: 50px;
-    }
-
-    @media (min-width: 800px) {
-        padding: {
-        top: 34px;
-        bottom: 73px;
-    }
-        h1 {
-            font-size: 4.5625rem;
-        }
-        .ilw-breadcrumbs + h1 {
-            margin-top: 70px;
-        }
+    a:visited {
+        color: var(--ilw-link--visited-color);
     }
 }

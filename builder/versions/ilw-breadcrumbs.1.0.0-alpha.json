@@ -16,14 +16,8 @@
         {
             "name": "default",
             "description": "Default information",
-            "text": "<a home=\"/\" href=\"/\">Home</a>\n    <a href=\"/academics\">Academics</a>\n    <a href=\"/academics/undergraduate\">Undergraduate programs</a>\n    <a href=\"\" current=\"\">Degree programs</a>"
-        },
-        {
-            "name": "lastbreadcrumb",
-            "description": "No link for last breadcrumb",
-            "text": "<ilw-breadcrumbs>\n    <a home=\"/\" href=\"/\">Home</a>\n    <a href=\"/academics\">Academics</a>\n    <a href=\"/academics/undergraduate\">Undergraduate programs</a>\n    <span>Degree programs</span>\n</ilw-breadcrumbs>"
+            "text": "<ol>\n        <li><a href=\"/\">Home</a></li>\n        <li><a href=\"/academics\">Academics</a></li>\n        <li><a href=\"/academics/undergraduate\">Undergraduate programs</a></li>\n        <li><span>Degree programs</span></li>\n    </ol>"
         }
-
     ],
     "attributes-fixed": [],
     "attributes-text": [],
