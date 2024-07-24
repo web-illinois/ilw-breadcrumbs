@@ -29,10 +29,4 @@ ilw-breadcrumbs {
         fill: var(--il-blue);
         padding: 0 6px;
     }
-    a {
-        color: var(--ilw-link--color);
-    }
-    a:visited {
-        color: var(--ilw-link--visited-color);
-    }
 }
