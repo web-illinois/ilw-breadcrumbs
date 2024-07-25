@@ -1,8 +1,14 @@
 import { LitElement, html } from 'lit';
+import { map } from 'lit/directives/map.js';
 import styles from './ilw-breadcrumbs.styles.js';
 import './ilw-breadcrumbs.css';
+import { ManualSlotController } from "./ManualSlotController.js";
 
 class Breadcrumbs extends LitElement {
+
+    static shadowRootOptions = {...LitElement.shadowRootOptions, slotAssignment: "manual"};
+
+    _observer = new ManualSlotController(this);
 
     static get properties() {
         return {
@@ -21,9 +27,11 @@ class Breadcrumbs extends LitElement {
 
     render() {
         return html`
-      <nav aria-label=${this.label} class="breadcrumb">
-        <slot></slot>
-      </nav>
+        <nav aria-label=${this.label} class="breadcrumb">
+            <ol>
+                ${map(Array.from(this.children), () => html`<li><slot></slot></li>`)}
+            </ol>
+        </nav>
     `;
     }
 }
