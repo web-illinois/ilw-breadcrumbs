@@ -16,7 +16,7 @@
         {
             "name": "default",
             "description": "Default information",
-            "text": "<ol>\n        <li><a href=\"/\">Home</a></li>\n        <li><a href=\"/academics\">Academics</a></li>\n        <li><a href=\"/academics/undergraduate\">Undergraduate programs</a></li>\n        <li><span>Degree programs</span></li>\n    </ol>"
+            "text": "<a href=\"/\">Home</a>\n    <a href=\"/academics\">Academics</a>\n    <a href=\"/academics/undergraduate\">Undergraduate programs</a>\n    <span>Degree programs</span>"
         }
     ],
     "attributes-fixed": [],
