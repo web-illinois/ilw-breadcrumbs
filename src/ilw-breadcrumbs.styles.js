@@ -1,18 +1,18 @@
 import { css } from 'lit';
 
 export default css`
-  ol {
+  .breadcrumb ol {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  li {
+  .breadcrumb li {
     display: inline;
     color: #252525;
     vertical-align: baseline;
     font: 400 0.875rem/2rem var(--il-font-sans);
   }
-  li + li::before {
+  .breadcrumb li + li::before {
     content: '';
     display: inline-block;
     width: 8px;
