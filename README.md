@@ -16,12 +16,10 @@ The current page item should not be linked, since following a link to the curren
 ## Code Example
 ```html
 <ilw-breadcrumbs>
-    <ol>
-        <li><a href="/">Home</a></li>
-        <li><a href="/academics">Academics</a></li>
-        <li><a href="/academics/undergraduate">Undergraduate programs</a></li>
-        <li><span>Degree programs</span></li>
-    </ol>
+    <a href="/">Home</a>
+    <a href="/academics">Academics</a>
+    <a href="/academics/undergraduate">Undergraduate programs</a>
+    <span>Degree programs</span>
 </ilw-breadcrumbs>
 ```
 
