@@ -1,19 +1,27 @@
 {
     "name": "@illinois-toolkit/ilw-breadcrumbs",
-    "description": "One paragraph description of the component.",
+    "description": "Illinois Toolkit: a list of formatted links that provide the path between the site’s home page and the page the reader is currently viewing.",
     "repository": "github:web-illinois/ilw-breadcrumbs",
     "private": false,
-    "version": "0.0.1",
+    "version": "1.0.0-alpha",
     "type": "module",
+    "files": [
+        "src/**",
+        "dist/**",
+        "builder/**"
+    ],
     "exports": {
         ".": {
-            "import": "./src/ilw-breadcrumbs.js"
+            "import": "./src/ilw-breadcrumbs.js",
+            "require": "./src/ilw-breadcrumbs.cjs",
+            "default": "./src/ilw-breadcrumbs.js"
         }
     },
     "scripts": {
         "dev": "vite",
         "build": "vite build --config vite.build.config.js --emptyOutDir",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "prepack": "npm run build"
     },
     "dependencies": {
         "lit": "3.1.3"
