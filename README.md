@@ -22,6 +22,10 @@ The current page item should not be linked, since following a link to the curren
     <span>Degree programs</span>
 </ilw-breadcrumbs>
 ```
+## Upgrade Process
+* Rename ```il-breadcrumbs``` to ```ilw-breadcrumbs```
+* Remove ```il-breadcrumbs-page``` tag and replace it with an anchor ```a``` tag
+* For the current page, remove ```il-breadcrumbs-page``` tag and replace it with ```span``` tag
 
 ## External References
 
