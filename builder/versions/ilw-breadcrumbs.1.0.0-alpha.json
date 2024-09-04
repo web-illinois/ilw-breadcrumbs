@@ -4,7 +4,7 @@
     "github": "https://github.com/web-illinois/ilw-breadcrumbs/",
     "type": "web component",
     "element-name": "ilw-breadcrumbs",
-    "description": "Description for builder.",
+    "description": "The breadcrumb component provides a list of formatted links that provide the path between the site’s home page and the page the reader is currently viewing.",
     "version": "1.0.0-alpha",
     "date": "07/15/2024",
     "css": "https://dev.toolkit.illinois.edu/ilw-breadcrumbs/1.0.0-alpha/ilw-breadcrumbs.css",
