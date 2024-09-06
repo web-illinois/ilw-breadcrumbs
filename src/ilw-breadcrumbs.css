@@ -5,7 +5,12 @@ ilw-breadcrumbs {
     a:visited {
         color: var(--ilw-link--visited-color);
     }
-    a:focus, a:hover {
+    a:hover {
         color: var(--ilw-link--focused-color);
+    }
+    a:focus {
+        color: var(--ilw-link--focus-color);
+        background-color: var(--ilw-link--focus-background-color);
+        outline: var(--ilw-link--focus-outline);
     }
 }
