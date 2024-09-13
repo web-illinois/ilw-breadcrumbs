@@ -7,5 +7,5 @@
     "description": "The breadcrumb component provides a list of formatted links that provide the path between the site’s home page and the page the reader is currently viewing.",
     "toolkit-version": "",
     "production-version": "",
-    "development-version": "1.0.0-alpha1"
+    "development-version": "1.0-beta"
 }
