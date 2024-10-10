@@ -10,7 +10,7 @@ export default css`
     display: inline;
     color: #252525;
     vertical-align: baseline;
-    font: 400 0.875rem/2rem var(--il-font-sans);
+    font: 400 0.875rem/1.5rem var(--il-font-sans);
   }
   .breadcrumb li + li::before {
     content: '>';
