@@ -3,7 +3,7 @@
     "description": "Illinois Toolkit: a list of formatted links that provide the path between the site’s home page and the page the reader is currently viewing.",
     "repository": "github:web-illinois/ilw-breadcrumbs",
     "private": false,
-    "version": "1.0.0-beta",
+    "version": "1.0.1-beta",
     "type": "module",
     "files": [
         "src/**",
