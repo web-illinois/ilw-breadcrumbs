@@ -13,6 +13,7 @@ class Breadcrumbs extends LitElement {
     static get properties() {
         return {
             label: {type: String, attribute: true},
+            width: { type: String, attribute: true }
         };
     }
 
@@ -23,11 +24,16 @@ class Breadcrumbs extends LitElement {
     constructor() {
         super();
         this.label = "Breadcrumbs";
+        this.width = '';
+    }
+
+    get outerWidth() {
+        return this.width == 'full' || this.width == 'auto' ? 'fixed' : this.width == 'page' ? 'page' : '';
     }
 
     render() {
         return html`
-        <nav aria-label=${this.label} class="breadcrumb">
+        <nav aria-label=${this.label} class="breadcrumb ${this.outerWidth}">
             <ol>
                 ${map(Array.from(this.children), () => html`<li><slot></slot></li>`)}
             </ol>

@@ -1,6 +1,20 @@
 import { css } from 'lit';
 
 export default css`
+  .breadcrumb.fixed {
+    left:50%;
+    margin-left:-50vw;
+    margin-right:-50vw;
+    padding-left:0;
+    padding-right:0;
+    position:relative;
+    right:50%;
+    width:100vw;
+  }
+
+  .breadcrumb.page {
+    margin: var(--ilw-breadcrumbs--main-margin, 0);
+  }
   .breadcrumb ol {
     list-style: none;
     margin: 0;
