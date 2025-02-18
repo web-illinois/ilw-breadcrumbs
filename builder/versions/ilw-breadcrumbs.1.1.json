@@ -1,0 +1,39 @@
+{
+    "title": "Breadcrumbs",
+    "tag": "ilw-breadcrumbs",
+    "github": "https://github.com/web-illinois/ilw-breadcrumbs/",
+    "type": "web component",
+    "element-name": "ilw-breadcrumbs",
+    "description": "The breadcrumb component provides a list of formatted links that provide the path between the site’s home page and the page the reader is currently viewing.",
+    "builder-version": "1.1",
+    "version": "1.1.0",
+    "date": "2/18/2025",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-breadcrumbs/1.1.0/ilw-breadcrumbs.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-breadcrumbs/1.1.0/ilw-breadcrumbs.js",
+    "production": true,
+    "notes": "",
+    "parent-style": "",
+    "samples": [
+        {
+            "name": "default",
+            "description": "Default information",
+            "text": "<a href=\"/\">Home</a>\n    <a href=\"/academics\">Academics</a>\n    <a href=\"/academics/undergraduate\">Undergraduate programs</a>\n    <span>Degree programs</span>"
+        }
+    ],
+    "attributes-fixed": [],
+    "attributes-text": [],
+    "attributes": [
+        {
+            "name": "width",
+            "description": "Whether or not this follows current borders or is full width",
+            "depreciated": false,
+            "values": [
+                "",
+                "page"
+            ]
+        }
+    ],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": []
+}
