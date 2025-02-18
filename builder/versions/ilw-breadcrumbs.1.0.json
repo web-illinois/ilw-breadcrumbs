@@ -22,17 +22,7 @@
     ],
     "attributes-fixed": [],
     "attributes-text": [],
-    "attributes": [
-        {
-            "name": "width",
-            "description": "Whether or not this follows current borders or is full width",
-            "depreciated": false,
-            "values": [
-                "",
-                "page"
-            ]
-        }
-    ],
+    "attributes": [],
     "classes-fixed": [],
     "classes": [],
     "css-variables": []
