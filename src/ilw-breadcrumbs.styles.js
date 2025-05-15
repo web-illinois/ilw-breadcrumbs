@@ -29,5 +29,6 @@ export default css`
   .breadcrumb li + li::before {
     content: '>';
     padding: 0 6px;
+    color: var(--il-altgeld);
   }
 `;
