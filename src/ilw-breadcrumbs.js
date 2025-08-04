@@ -13,7 +13,8 @@ class Breadcrumbs extends LitElement {
     static get properties() {
         return {
             label: {type: String, attribute: true},
-            width: { type: String, attribute: true }
+            width: { type: String, attribute: true },
+            theme: { type: String, attribute: true }
         };
     }
 
@@ -25,6 +26,7 @@ class Breadcrumbs extends LitElement {
         super();
         this.label = "Breadcrumbs";
         this.width = '';
+        this.theme = '';
     }
 
     get outerWidth() {
