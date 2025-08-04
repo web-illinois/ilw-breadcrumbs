@@ -6,7 +6,7 @@
     "element-name": "ilw-breadcrumbs",
     "description": "The breadcrumb component provides a list of formatted links that provide the path between the site’s home page and the page the reader is currently viewing.",
     "purpose": "Help users navigate the website's hierarchy.",
-    "toolkit-version": "1.1",
-    "production-version": "1.1",
+    "toolkit-version": "1.2",
+    "production-version": "1.2",
     "development-version": "1.0-beta"
 }
