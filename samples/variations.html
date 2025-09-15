@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breadcrumbs Component</title>
+    <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+    <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+    <script type="module" src="/src/ilw-breadcrumbs.ts"></script>
+</head>
+
+<body style="margin: 0; padding: 0;">
+<ilw-breadcrumbs id="breadcrumbs">
+    <a href="/">Home</a>
+    <a href="/academics">Academics</a>
+    <a href="/academics/undergraduate">Undergraduate programs</a>
+    <span>Degree programs</span>
+</ilw-breadcrumbs>
+<script type="module">
+  import { createVariations } from "@illinois-toolkit/ilw-core";
+  import Breadcrumbs from "../src/ilw-breadcrumbs.ts";
+
+  createVariations(
+    document.getElementById("breadcrumbs"),
+    Breadcrumbs,
+    {
+      theme: [
+        "",
+        "blue"
+      ],
+      width: [
+        "",
+        "page"
+      ],
+      "data-simulated-hover": [undefined, "true"],
+    },
+    ["breadcrumbs"],
+  );
+</script>
+</body>
+
+</html>
