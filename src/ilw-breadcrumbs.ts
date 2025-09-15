@@ -9,7 +9,7 @@ import { ManualSlotController } from './ManualSlotController.js';
 export type BreadcrumbWidth = 'full' | 'auto' | 'page' | '';
 
 @customElement('ilw-breadcrumbs')
-export class Breadcrumbs extends LitElement {
+export default class Breadcrumbs extends LitElement {
     static override shadowRootOptions: ShadowRootInit = {
         ...LitElement.shadowRootOptions,
         slotAssignment: 'manual',
