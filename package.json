@@ -19,10 +19,10 @@
         },
         "./ilw-breadcrumbs.css": {
             "import": "./dist/ilw-breadcrumbs.css"
-        },
-        "main": "./dist/ilw-breadcrumbs.js",
-        "module": "./dist/ilw-breadcrumbs.js"
+        }
     },
+    "main": "./dist/ilw-breadcrumbs.js",
+    "module": "./dist/ilw-breadcrumbs.js",
     "scripts": {
         "dev": "vite",
         "build": "tsc --noEmit && vite build --config vite.transpile.config.ts --emptyOutDir && vite build --config vite.build.config.ts --emptyOutDir",
@@ -31,7 +31,7 @@
         "test:axe": "playwright test",
         "test:axe:github": "playwright test --config playwright.ci.config.ts",
         "test": "vitest run --browser.headless",
-        "test: browser": "vitest browser --browser chromium"
+        "test:browser": "vitest watch --browser chromium"
     },
     "dependencies": {
         "lit": "3.1.3"
