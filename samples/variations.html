@@ -11,18 +11,20 @@
 </head>
 
 <body style="margin: 0; padding: 0;">
+<div id="variations">
 <ilw-breadcrumbs id="breadcrumbs">
     <a href="/">Home</a>
     <a href="/academics">Academics</a>
     <a href="/academics/undergraduate">Undergraduate programs</a>
     <span>Degree programs</span>
 </ilw-breadcrumbs>
+</div>
 <script type="module">
   import { createVariations } from "@illinois-toolkit/ilw-core";
   import Breadcrumbs from "../src/ilw-breadcrumbs.ts";
 
   createVariations(
-    document.getElementById("breadcrumbs"),
+    document.getElementById("variations"),
     Breadcrumbs,
     {
       theme: [
