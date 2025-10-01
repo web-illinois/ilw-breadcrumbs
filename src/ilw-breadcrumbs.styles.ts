@@ -3,38 +3,32 @@ import { css } from 'lit';
 export default css`
   :host {
     display: block;
-    background-color: var(--ilw-breadcrumbs--background-color);
-    color: var(--ilw-breadcrumbs--text-color);
-    --ilw-breadcrumbs--link-color: var(--ilw-link--color);
-    --ilw-breadcrumbs--link-visited-color: var(--ilw-link--visited-color);
-    --ilw-breadcrumbs--link-focused-color: var(--ilw-link--focused-color);
+    background-color: var(--ilw-color--background);
+    color: var(--ilw-color--text);
+    --ilw-breadcrumbs--link-color: var(--ilw-color--link);
     --ilw-breadcrumbs--separator-color: var(--il-altgeld);
   }
   :host([theme="blue"]) {
-    --ilw-breadcrumbs--background-color: var(--il-blue);
-    --ilw-breadcrumbs--text-color: white;
-    --ilw-breadcrumbs--link-color: #8DD1EB;
-    --ilw-breadcrumbs--link-visited-color: white;
-    --ilw-breadcrumbs--link-focused-color: var(--il-orange);
     --ilw-breadcrumbs--separator-color: var(--il-orange);
+    --ilw-breadcrumbs--link-color: #8DD1EB;
   }
   ::slotted(a) {
     color: var(--ilw-breadcrumbs--link-color);
   }
   ::slotted(a:visited) {
-    color: var(--ilw-link--visited-color);
+    color: var(--ilw-color--text);
   }
   ::slotted(a:hover) {
-    color: var(--ilw-link--focused-color);
+    color: var(--ilw-color--link-hover);
   }
   ::slotted(a:focus) {
-    color: var(--ilw-link--focus-color);
-    background-color: var(--ilw-link--focus-background-color);
-    outline: var(--ilw-link--focus-outline);
+    color: var(--ilw-color--focus--text);
+    background-color: var(--ilw-color--focus--background);
+    outline: solid var(--ilw-color--focus--outline) 1px;
   }
   .breadcrumb {
-    background-color: var(--ilw-breadcrumbs--background-color);
-    color: var(--ilw-breadcrumbs--text-color);
+    background-color: var(--ilw-color--background);
+    color: var(--ilw-color--text);
     padding: 0.5rem 1rem;
   }
   .breadcrumb.fixed {
@@ -64,16 +58,5 @@ export default css`
     content: '>';
     padding: 0 6px;
     color: var(--ilw-breadcrumbs--separator-color);
-  }
-  :host([theme="blue"]) ::slotted(a:visited) {
-    color: var(--ilw-breadcrumbs--link-visited-color);
-  }
-  :host([theme="blue"]) ::slotted(a:hover) {
-    color: var(--ilw-breadcrumbs--link-focused-color);
-  }
-  :host([theme="blue"]) ::slotted(a:focus) {
-    color: var(--ilw-link--focus-color);
-    background-color: var(--ilw-link--focus-background-color);
-    outline: var(--ilw-link--focus-outline);
   }
 `;
