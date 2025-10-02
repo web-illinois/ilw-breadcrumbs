@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -7,14 +8,15 @@ export default defineConfig({
         outDir: "../dist",
         lib: {
             name: "ilw-breadcrumbs",
-            entry: "ilw-breadcrumbs.js",
+            entry: "ilw-breadcrumbs.ts",
             fileName: "ilw-breadcrumbs",
-            formats: ["es", "cjs", "umd"],
+            formats: ["es"],
         },
         rollupOptions: {
+            external: [/^@?lit/, /^@illinois-toolkit/],
             output: {
                 assetFileNames: (chunkInfo) => {
-                    if (chunkInfo.name === "style.css") return "ilw-breadcrumbs.css";
+                    return "[name][extname]"; // vite default
                 },
             },
         },
@@ -22,4 +24,5 @@ export default defineConfig({
     server: {
         hmr: false,
     },
+    plugins: [dts()],
 });

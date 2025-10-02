@@ -1,9 +1,9 @@
 :root {
     --ilw-breadcrumbs--main-margin: 0 max(1.875rem, calc(50cqw - 37.5rem)) 0;
-    --ilw-breadcrumbs--text-color: var(--ilw-text--color);
-    --ilw-breadcrumbs--background-color: white;
-    --ilw-breadcrumbs--link-color: var(--ilw-link--color);
-    --ilw-breadcrumbs--link-visited-color: var(--ilw-link--visited-color);
-    --ilw-breadcrumbs--link-focused-color: var(--ilw-link--focused-color);
+    --ilw-breadcrumbs--text-color: var(--ilw-color--text);
+    --ilw-breadcrumbs--background-color: var(--ilw-color--background);
+    --ilw-breadcrumbs--link-color: var(--ilw-color--link);
+    --ilw-breadcrumbs--link-visited-color: var(--ilw-color--text);
+    --ilw-breadcrumbs--link-focused-color: var(--ilw-color--focus--text);
     --ilw-breadcrumbs--separator-color: var(--il-altgeld);
 }
