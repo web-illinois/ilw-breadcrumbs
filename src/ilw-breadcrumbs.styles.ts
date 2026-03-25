@@ -42,7 +42,7 @@ export default css`
     width:100vw;
   }
   .breadcrumb.page {
-    margin: var(--ilw-breadcrumbs--main-margin, 0);
+    margin: 0 var(--ilw-margin--side, 0);
   }
   .breadcrumb ol {
     list-style: none;
