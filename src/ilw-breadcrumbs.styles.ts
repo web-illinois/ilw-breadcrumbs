@@ -29,7 +29,7 @@ export default css`
   .breadcrumb {
     background-color: var(--ilw-color--background);
     color: var(--ilw-color--text);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
   }
   .breadcrumb.fixed {
     left:50%;
