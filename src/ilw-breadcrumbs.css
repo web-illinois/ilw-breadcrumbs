@@ -2,5 +2,7 @@
     --ilw-breadcrumbs--link-color: var(--ilw-color--link);
     --ilw-breadcrumbs--link-visited-color: var(--ilw-color--text);
     --ilw-breadcrumbs--link-focused-color: var(--ilw-color--focus--text);
+    --ilw-breadcrumbs--link-focused-background-color: var(--ilw-color--focus--background);
     --ilw-breadcrumbs--separator-color: var(--il-altgeld);
+    --ilw-breadcrumbs--link-focused-border: solid var(--ilw-color--focus--outline) 2px;
 }

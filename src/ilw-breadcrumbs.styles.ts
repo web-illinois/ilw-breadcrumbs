@@ -11,9 +11,12 @@ export default css`
   :host([theme="blue"]) {
     --ilw-breadcrumbs--separator-color: var(--il-orange);
     --ilw-breadcrumbs--link-color: #8DD1EB;
+    --ilw-color--focus--outline: #ffffff;
   }
   ::slotted(a) {
     color: var(--ilw-breadcrumbs--link-color);
+    text-decoration: underline;
+    cursor: pointer;
   }
   ::slotted(a:visited) {
     color: var(--ilw-color--text);
@@ -24,7 +27,14 @@ export default css`
   ::slotted(a:focus) {
     color: var(--ilw-color--focus--text);
     background-color: var(--ilw-color--focus--background);
-    outline: solid var(--ilw-color--focus--outline) 1px;
+    border-bottom: solid var(--ilw-color--focus--outline) 2px;
+    text-decoration: none;
+  }
+  ::slotted(a:focus:hover) {
+    color: var(--ilw-color--focus--text);
+    background-color: var(--ilw-color--focus--background);
+    border-bottom: solid var(--ilw-color--focus--outline) 2px;
+    text-decoration: underline;
   }
   .breadcrumb {
     background-color: var(--ilw-color--background);
